@@ -2,7 +2,7 @@ from run_container import run_container
 
 config_docker={
     'port_mapping':[],
-    'volume_mapping':[['/home/coneptum/redmine/volumes','/var/lib/postgresql']],
+    'volume_mapping':[['/home/coneptum/volumes/redmine','/var/lib/postgresql']],
     'links':[],
     'config_templates':[],
     'environment':[['DB_NAME','redmine_production'], [' DB_USER', 'redmine'], ['DB_PASS', 'redminepw0'], ['POSTGRES_PASSWORD', 'redminepw0']],
